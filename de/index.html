@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kryvon Edge | Krypto-Investmentplattform</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-lang="de">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">Kryvon Edge</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#context">Context</a>
+        <a href="#approach">Approach</a>
+        <a href="#platform">Platform</a>
+        <a href="#testimonials">Investors</a>
+        <a class="nav-cta" href="#final-cta">Request Access</a>
+        <select class="lang-select" aria-label="Language selector">
+          <option value="../index.html">EN</option>
+          <option value="../de/index.html" selected>DE</option>
+          <option value="../fr/index.html">FR</option>
+          <option value="../es/index.html">ES</option>
+          <option value="../it/index.html">IT</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-gap">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Institutionelle Digital-Asset-Intelligenz</span>
+          <h1>Strukturierte Krypto-Allokation für langfristiges Kapital</h1>
+          <p class="lead">Kryvon Edge verbindet quantitative Forschung, disziplinierte Ausführung und Risikokontrollen für digitale Assets.</p>
+          <div class="micro-metrics">
+            <article class="metric-card">
+              <p class="metric-value count-up" data-target="48">0</p>
+              <p class="metric-label">Markets Screened</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value count-up" data-target="12">0</p>
+              <p class="metric-label">Strategy Models</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value count-up" data-target="96">0</p>
+              <p class="metric-label">Risk Checks / Day</p>
+            </article>
+            <article class="metric-card">
+              <p class="metric-value count-up" data-target="24">0</p>
+              <p class="metric-label">Hour Monitoring</p>
+            </article>
+          </div>
+        </div>
+        <aside class="access-card">
+          <h2>Privater Zugangs-Antrag</h2>
+          <form class="contact-form">
+            <label>Vollständiger Name<input type="text" name="name" required /></label>
+            <label>Geschäftliche E-Mail<input type="email" name="email" required /></label>
+            <label>Telefonnummer<input type="tel" name="phone" required /></label>
+            <label>Nachricht (optional)<textarea name="message" rows="3"></textarea></label>
+            <button type="submit">Anfrage senden</button>
+            <small>Our team reviews each request within one business day.</small>
+            <a href="#" class="privacy-link" data-open-privacy>Datenschutzrichtlinie</a>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="calculator" class="section-gap soft-bg">
+      <div class="container">
+        <p class="section-label">Rechner</p>
+        <h2>Illustrative Allocation Projection</h2>
+        <div class="calculator-card">
+          <div class="calc-inputs">
+            <label>Investment Amount
+              <input id="amount" type="range" min="10000" max="1000000" step="5000" value="150000" />
+              <span id="amountValue"></span>
+            </label>
+            <label>Expected Annual Return
+              <input id="returnRate" type="range" min="2" max="35" step="0.5" value="14" />
+              <span id="returnValue"></span>
+            </label>
+            <label>Time Horizon
+              <input id="years" type="range" min="1" max="15" step="1" value="5" />
+              <span id="yearsValue"></span>
+            </label>
+          </div>
+          <div class="calc-result">
+            <p class="result-label">Projected Portfolio Value</p>
+            <p id="projectedValue" class="projected-main">$0</p>
+            <p>Estimated profit: <strong id="profitValue">$0</strong></p>
+            <p>Total gain: <strong id="gainValue">0%</strong></p>
+            <div class="progress-wrap"><div id="calcProgress" class="progress-bar"></div></div>
+          </div>
+        </div>
+        <button class="assumption-toggle" aria-expanded="false">Show assumptions</button>
+        <div class="assumption-content" hidden>
+          <p>Assumes annual compounding, no additional contributions, and stable return distribution.</p>
+          <p class="disclaimer">Disclaimer: This projection is illustrative only and not investment advice. Digital assets involve significant risk and volatility.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="context" class="section-gap">
+      <div class="container">
+        <p class="section-label">Context</p>
+        <h2>Digital Asset Markets Have Matured, Fragmented, and Accelerated</h2>
+        <p class="lead">Institutional participation is growing, but opportunity remains uneven across venues, products, and liquidity conditions.</p>
+        <div class="highlight-box">Disciplined allocation now requires integrated analysis across macro, derivatives, and on-chain data rather than single-factor conviction.</div>
+      </div>
+    </section>
+
+    <section id="approach" class="section-gap soft-bg">
+      <div class="container">
+        <p class="section-label">Approach</p>
+        <h2>Crypto is not a single market.</h2>
+        <div class="tile-grid">
+          <article class="tile"><span>◉</span><h3>On-chain</h3><p>Flow and wallet behavior.</p></article>
+          <article class="tile"><span>◉</span><h3>Derivatives</h3><p>Funding, skew, open interest.</p></article>
+          <article class="tile"><span>◉</span><h3>Liquidity</h3><p>Depth, slippage, venue quality.</p></article>
+          <article class="tile"><span>◉</span><h3>Macro</h3><p>Rates, dollar, risk appetite.</p></article>
+          <article class="tile"><span>◉</span><h3>Execution</h3><p>Rule-based entry and exit.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="section-gap">
+      <div class="container split">
+        <div>
+          <p class="section-label">Platform</p>
+          <h2>One Operational Layer for Research, Signal Validation, and Deployment</h2>
+          <p class="lead">Kryvon Edge centralizes signal ingestion, scenario testing, and execution governance in a single institutional workflow.</p>
+        </div>
+        <div class="analytics-card">
+          <div class="line"></div>
+          <div class="bars">
+            <span style="height: 42%"></span>
+            <span style="height: 67%"></span>
+            <span style="height: 51%"></span>
+            <span style="height: 79%"></span>
+            <span style="height: 64%"></span>
+          </div>
+          <p>Cross-market signal confidence</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap dark-section">
+      <div class="container centered">
+        <p class="section-label">Data Discipline</p>
+        <h2>High-Frequency Oversight with Institutional Controls</h2>
+        <div class="dark-metrics">
+          <article><p class="count-up" data-target="320">0</p><small>Signals Evaluated Daily</small></article>
+          <article><p class="count-up" data-target="7">0</p><small>Execution Venues</small></article>
+          <article><p class="count-up" data-target="29">0</p><small>Risk Parameters</small></article>
+          <article><p class="count-up" data-target="99">0</p><small>Model Uptime %</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap soft-bg">
+      <div class="container">
+        <p class="section-label">Process</p>
+        <h2>From Analysis to Action</h2>
+        <div class="steps">
+          <article><h3>1. Observe</h3><p>Aggregate on-chain, market, and macro datasets.</p></article>
+          <article><h3>2. Validate</h3><p>Stress-test conviction through scenario and liquidity filters.</p></article>
+          <article><h3>3. Execute</h3><p>Deploy with predefined sizing and active risk boundaries.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap">
+      <div class="container">
+        <p class="section-label">Fit</p>
+        <h2>Who It Is For</h2>
+        <div class="fit-card">
+          <div>
+            <h3>Suited For</h3>
+            <ul>
+              <li>Family offices seeking digital asset exposure</li>
+              <li>Operators reallocating treasury reserves</li>
+              <li>Professional investors requiring a framework</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Not For</h3>
+            <ul>
+              <li>Short-term speculation without risk process</li>
+              <li>Unverified high-yield promises</li>
+              <li>Investors unwilling to accept volatility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-gap soft-bg">
+      <div class="container">
+        <p class="section-label">Trusted by Investors</p>
+        <h2>Selected Client Perspectives</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial"><div class="avatar"></div><h3>Clara Neumann</h3><p>Partner, Multi-Asset Office</p><p>Berlin, Germany</p><span class="badge">Verified</span><small>Client since 2022</small></article>
+          <article class="testimonial"><div class="avatar"></div><h3>Louis Martin</h3><p>CFO, Industrial Group</p><p>Lyon, France</p><span class="badge">Verified</span><small>Client since 2021</small></article>
+          <article class="testimonial"><div class="avatar"></div><h3>Elena Ruiz</h3><p>Principal, Wealth Advisory</p><p>Madrid, Spain</p><span class="badge">Verified</span><small>Client since 2023</small></article>
+          <article class="testimonial"><div class="avatar"></div><h3>Matteo Greco</h3><p>Director, Private Capital</p><p>Milan, Italy</p><span class="badge">Verified</span><small>Client since 2020</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta" class="section-gap">
+      <div class="container final-cta">
+        <div>
+          <p class="section-label">Nächster Schritt</p>
+          <h2>Private Einführung anfragen</h2>
+          <p class="lead">Share your profile and our team will reach out with onboarding details.</p>
+        </div>
+        <form class="contact-form">
+          <label>Vollständiger Name<input type="text" name="name" required /></label>
+          <label>Geschäftliche E-Mail<input type="email" name="email" required /></label>
+          <label>Telefonnummer<input type="tel" name="phone" required /></label>
+          <label>Nachricht (optional)<textarea name="message" rows="3"></textarea></label>
+          <button type="submit">Request Conversation</button>
+          <small>Average response time: under 24 hours.</small>
+          <a href="#" class="privacy-link" data-open-privacy>Datenschutzrichtlinie</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="privacy-modal" id="privacyModal" aria-hidden="true">
+    <div class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+      <button class="close-modal" aria-label="Close">×</button>
+      <h2 id="privacyTitle">Privacy Policy</h2>
+      <p>We collect contact information to evaluate private access requests and provide platform communications.</p>
+      <h3>Data use</h3>
+      <p>Submitted details are used solely for onboarding and relationship management. We do not sell personal data.</p>
+      <h3>Retention</h3>
+      <p>Information is retained according to compliance obligations and removed when no longer required.</p>
+      <h3>Contact</h3>
+      <p>You may request data review or deletion by contacting compliance@kryvon-edge.com.</p>
+    </div>
+  </div>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
